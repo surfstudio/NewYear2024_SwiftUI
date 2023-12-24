@@ -10,8 +10,6 @@ import SwiftUI
 struct FirePlaceView: View {
     var body: some View {
         GeometryReader { geometry in
-            HStack {
-                Spacer()
                 ZStack(alignment: .bottom) {
                     Image("fire_place")
                         .resizable()
@@ -28,8 +26,7 @@ struct FirePlaceView: View {
                         .offset(y: -0.12 * geometry.size.height)
                 }
                 .aspectRatio(1.8, contentMode: .fit)
-                Spacer()
-            }
+                .frame(maxWidth: .infinity, alignment: .center)
         }
     }
 }

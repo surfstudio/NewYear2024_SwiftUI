@@ -13,19 +13,17 @@ struct CandleView: View {
 
     var body: some View {
         GeometryReader { geometry in
-            let coeff = 1.0
-            
             VStack(spacing: 0) {
                 CnadleFireView()
                     .frame(
-                        width: coeff * 0.55 * geometry.size.width,
-                        height: coeff * 0.25 * geometry.size.height
+                        width: 0.55 * geometry.size.width,
+                        height: 0.25 * geometry.size.height
                     )
                 Image(imageName)
                     .resizable()
                     .frame(
-                        width: coeff * geometry.size.width,
-                        height: coeff * 0.75 * geometry.size.height
+                        width: geometry.size.width,
+                        height: 0.75 * geometry.size.height
                     )
             }
         }

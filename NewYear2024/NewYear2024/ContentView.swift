@@ -7,12 +7,7 @@
 
 import SwiftUI
 
-// fireworks
-// hue rotation
-
-
 struct ContentView: View {
-    @State private var acceleration = 5
     var body: some View {
         ZStack {
             RoomView()

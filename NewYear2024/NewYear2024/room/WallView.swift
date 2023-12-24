@@ -17,7 +17,7 @@ struct WallView: View {
                     WindowView()
                         .frame(width: 0.15 * geometry.size.width)
                     Spacer()
-                    VStack {
+                    VStack(spacing: 30) {
                         Text("HAPPY NEW YEAR!")
                             .font(.system(size: 64, weight: .bold))
                             .foregroundStyle(.white)

@@ -13,7 +13,6 @@
 		C34CED9B2AD2D29900226DD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CED9A2AD2D29900226DD8 /* ContentView.swift */; };
 		C34CED9D2AD2D29A00226DD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C34CED9C2AD2D29A00226DD8 /* Assets.xcassets */; };
 		C34CEDA02AD2D29A00226DD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C34CED9F2AD2D29A00226DD8 /* Preview Assets.xcassets */; };
-		C34CEDA92AD2DC0D00226DD8 /* FireworksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CEDA82AD2DC0D00226DD8 /* FireworksView.swift */; };
 		C34CEDAB2AD2DFD900226DD8 /* FireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CEDAA2AD2DFD900226DD8 /* FireView.swift */; };
 		C34CEDAD2AD2E7DF00226DD8 /* FlameShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CEDAC2AD2E7DF00226DD8 /* FlameShape.swift */; };
 		C34CEDB12AD2EEEB00226DD8 /* WindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CEDB02AD2EEEB00226DD8 /* WindowView.swift */; };
@@ -39,7 +38,6 @@
 		C34CED9A2AD2D29900226DD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C34CED9C2AD2D29A00226DD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C34CED9F2AD2D29A00226DD8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C34CEDA82AD2DC0D00226DD8 /* FireworksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireworksView.swift; sourceTree = "<group>"; };
 		C34CEDAA2AD2DFD900226DD8 /* FireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireView.swift; sourceTree = "<group>"; };
 		C34CEDAC2AD2E7DF00226DD8 /* FlameShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlameShape.swift; sourceTree = "<group>"; };
 		C34CEDB02AD2EEEB00226DD8 /* WindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowView.swift; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 			children = (
 				C358ACAB2B20C564002626F0 /* snow */,
 				C34CEDB02AD2EEEB00226DD8 /* WindowView.swift */,
-				C34CEDA82AD2DC0D00226DD8 /* FireworksView.swift */,
 			);
 			path = window;
 			sourceTree = "<group>";
@@ -263,7 +260,6 @@
 				C3962A042B220F2D006D42FE /* StarLightView.swift in Sources */,
 				C34CEDB12AD2EEEB00226DD8 /* WindowView.swift in Sources */,
 				C34CEDAD2AD2E7DF00226DD8 /* FlameShape.swift in Sources */,
-				C34CEDA92AD2DC0D00226DD8 /* FireworksView.swift in Sources */,
 				C380F51A2B20F0A30008666D /* CandlesView.swift in Sources */,
 				C34CEDB32AD2F0A200226DD8 /* FirePlaceView.swift in Sources */,
 				C358ACB02B20D4DE002626F0 /* WallView.swift in Sources */,
@@ -424,9 +420,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.darialeonova.NewYear2024;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -454,9 +453,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.darialeonova.NewYear2024;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
