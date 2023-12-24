@@ -27,7 +27,10 @@ struct GarlandLineView: View {
                 .foregroundColor(.black)
 
                 ForEach(Array(lightCoordinates.enumerated()), id: \.offset) { index, coordinate in
-                    GarlandLightView(hasDelay: index % 2 == 0)
+                    GarlandLightView(
+                        hasDelay: index % 2 == 0,
+                        color: [.red, .fireYellow, .blue][index % 3]
+                    )
                         .frame(width: 32, height: 32)
                         .position(x: coordinate.x, y: coordinate.y)
                 }

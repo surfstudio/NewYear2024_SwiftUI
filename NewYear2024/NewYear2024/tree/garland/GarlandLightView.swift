@@ -11,23 +11,28 @@ struct GarlandLightView: View {
 
     @State private var isAnimate = false
     let hasDelay: Bool
+    let color: Color
+
+    init(hasDelay: Bool, color: Color = .fireYellow) {        self.hasDelay = hasDelay
+        self.color = color
+    }
 
     var body: some View {
         GeometryReader { geometry in
             let width = geometry.size.width
             let height = geometry.size.height
             ZStack {
-                Circle().fill(.fireYellow)
+                Circle().fill(color)
                     .frame(width: width, height: height)
                     .scaleEffect(isAnimate ? 1 : 0.7)
                     .opacity(isAnimate ? 0.4 : 0.1)
 
-                Circle().fill(.fireYellow)
+                Circle().fill(color)
                     .frame(width: 0.7 * width, height: 0.7 * height)
                     .scaleEffect(isAnimate ? 1 : 0.5)
                     .opacity(isAnimate ? 0.6 : 0.1)
 
-                Circle().fill(.fireYellow)
+                Circle().fill(color)
                     .frame(width: 0.4 * width, height: 0.4 * height)
             }
         }
